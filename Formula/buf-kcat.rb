@@ -5,7 +5,7 @@
 class BufKcat < Formula
   desc "Kafka consumer CLI tool with protobuf decoding using buf"
   homepage "https://github.com/HurSungYun/buf-kcat"
-  version "0.0.8"
+  version "0.1.0"
   license "MIT"
 
   depends_on "buf" => :optional
@@ -13,16 +13,16 @@ class BufKcat < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/HurSungYun/buf-kcat/releases/download/v0.0.8/buf-kcat_0.0.8_Darwin_x86_64.tar.gz"
-      sha256 "a65dfd2f223ac72263db4adb6b102eca29bf878812d5977ffedbc121f9846921"
+      url "https://github.com/HurSungYun/buf-kcat/releases/download/v0.1.0/buf-kcat_0.1.0_Darwin_x86_64.tar.gz"
+      sha256 "72bd2741af1bd458bbe616eb054524a1609fedaac86cf490355b36e5dfc057e0"
 
       def install
         bin.install "buf-kcat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/HurSungYun/buf-kcat/releases/download/v0.0.8/buf-kcat_0.0.8_Darwin_arm64.tar.gz"
-      sha256 "042ad2910550877dc4d7b3155fed5e2222ee462b86a9ff31abbb69fe569221ab"
+      url "https://github.com/HurSungYun/buf-kcat/releases/download/v0.1.0/buf-kcat_0.1.0_Darwin_arm64.tar.gz"
+      sha256 "ceee39f31d47bb1773cec64d60922ae0efa226e5e7e10b2f61165ad30ca3bb44"
 
       def install
         bin.install "buf-kcat"
@@ -32,15 +32,15 @@ class BufKcat < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/HurSungYun/buf-kcat/releases/download/v0.0.8/buf-kcat_0.0.8_Linux_x86_64.tar.gz"
-      sha256 "c725d3240989daf0d972d479b602e7fe8439e4fd87a1590ca76c87ad8de54006"
+      url "https://github.com/HurSungYun/buf-kcat/releases/download/v0.1.0/buf-kcat_0.1.0_Linux_x86_64.tar.gz"
+      sha256 "9dfce3d9aa9d6b1eed9a1e95a6b17dbf8731bd408c769461fd2b3fe9d59c2657"
       def install
         bin.install "buf-kcat"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/HurSungYun/buf-kcat/releases/download/v0.0.8/buf-kcat_0.0.8_Linux_arm64.tar.gz"
-      sha256 "b81a4cf17b593bb8c58899a8320e2283f6939db4fadfa0648aee9377ee50a124"
+      url "https://github.com/HurSungYun/buf-kcat/releases/download/v0.1.0/buf-kcat_0.1.0_Linux_arm64.tar.gz"
+      sha256 "53eaa9645b93e8026fa4b05b20dbd0f635ab48a39e7f7caf7dd22a5a97ba63af"
       def install
         bin.install "buf-kcat"
       end
